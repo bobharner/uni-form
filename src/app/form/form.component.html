@@ -1,0 +1,7 @@
+<p>
+  This form has the following form elements:
+</p>
+
+<div *ngFor="let elem of form.elements" class="well">
+  <form-element [element]="elem"></form-element>
+</div>
