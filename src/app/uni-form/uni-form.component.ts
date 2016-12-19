@@ -1,7 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { FormGroup } from '@angular/forms';
 
-import { Form } from '../model/form';
+import { UniForm } from '../model/uni-form';
 import { FormElement } from '../model/form-element';
 // import { FormElementService } from '../form-element/form-element.service';
 
@@ -13,10 +13,10 @@ import { FormElement } from '../model/form-element';
 export class UniFormComponent implements OnInit {
 
     // @Input()
-    form: Form;
+    form: UniForm;
 
     constructor() {
-        this.form = new Form();
+        this.form = new UniForm();
         this.form.elements = [
             new FormElement('pageBreak', 'This is a section header'),
             new FormElement('checkbox', 'This is a checkbox'),

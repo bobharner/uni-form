@@ -3,7 +3,7 @@ import { FormElement } from '../model/form-element';
 /**
  * A named collection of form elements
  */
-export class Form {
+export class UniForm {
     name: string;
     elements: FormElement<string>[];
 

@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 
-import { Form } from './model/form';
+import { UniForm } from './model/uni-form';
 import { FormElement } from './model/form-element';
 
 @Component({
@@ -10,12 +10,12 @@ import { FormElement } from './model/form-element';
 })
 export class AppComponent {
     title: string = 'Uni-Form';
-    form: Form;
+    form: UniForm;
 
     Constructor() {
         // FIXME: Temporarily hard-coding a list of form elements
-
-        this.form = new Form();
+        console.log("harner here in constructor");
+        this.form = new UniForm();
         this.form.elements = [
             new FormElement('pageBreak', 'This is a section header'),
             new FormElement('checkbox', 'This is a checkbox'),
