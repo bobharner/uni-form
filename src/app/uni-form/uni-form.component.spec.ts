@@ -1,5 +1,5 @@
 /**
- * Jasmine unit tests for the form-element component
+ * Jasmine unit tests for the uni-form component 
  */
 
 /* tslint:disable:no-unused-variable */
@@ -7,21 +7,21 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
 
-import { FormElementComponent } from './form-element.component';
+import { UniFormComponent } from './uni-form.component';
 
-describe('FormElementComponent', () => {
-    let component: FormElementComponent;
-    let fixture: ComponentFixture<FormElementComponent>;
+describe('UniFormComponent', () => {
+    let component: UniFormComponent;
+    let fixture: ComponentFixture<UniFormComponent>;
 
     beforeEach(async(() => {
         TestBed.configureTestingModule({
-            declarations: [FormElementComponent]
+            declarations: [UniFormComponent]
         })
             .compileComponents();
     }));
 
     beforeEach(() => {
-        fixture = TestBed.createComponent(FormElementComponent);
+        fixture = TestBed.createComponent(UniFormComponent);
         component = fixture.componentInstance;
         fixture.detectChanges();
     });

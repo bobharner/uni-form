@@ -1,20 +1,21 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { FormElement } from './form-element.model';
+
+import { FormElement } from '../model/form-element';
 
 @Component({
-  selector: 'app-form-element',
-  templateUrl: './form-element.component.html',
-  styleUrls: ['./form-element.component.css']
+    selector: 'form-element',
+    templateUrl: './form-element.component.html',
+    styleUrls: ['./form-element.component.css']
 })
 export class FormElementComponent implements OnInit {
 
-  formElement: FormElement;
+    formElement: FormElement<string>;
 
-  @Input() element: FormElement;
+    @Input() element: FormElement<string>;
 
-  constructor() { }
+    constructor() { }
 
-  ngOnInit() {
-  }
+    ngOnInit() {
+    }
 
-}
+};
