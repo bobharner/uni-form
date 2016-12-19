@@ -18,7 +18,7 @@ describe('App: Uni-Form', () => {
         expect(app).toBeTruthy();
     }));
 
-    it(`should have as app title 'Uni-Form'`, asyncu(() => {
+    it(`should have as app title 'Uni-Form'`, async(() => {
         let fixture = TestBed.createComponent(AppComponent);
         let app = fixture.debugElement.componentInstance;
         expect(app.title).toEqual('Uni-Form');
